@@ -1,0 +1,18 @@
+<!-- insert element in array position wise.(using for loop) 
+let arr = [10,20,30,40,50];
+pos = 2
+value = 25 -->
+
+<script type="text/javascript">
+    let arr = [10, 20, 30, 40, 50];
+
+    document.write(`<h1>Old array is: ${arr}</h1>`)
+
+    let pos = parseInt(prompt("Enter the position to insert: "));
+    let value = parseInt(prompt("Enter the value to insert: "));
+
+    arr.splice(pos, 0, value);
+
+   document.write(`<h1>Final array is: ${arr}</h1>`);
+
+</script>

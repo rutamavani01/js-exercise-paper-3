@@ -1,0 +1,22 @@
+<!-- Write a JavaScript program to find which number is greter in 3 numbers using ladder if else.(return with parameter function) -->
+
+<script type="text/javascript">
+
+    var n1 = parseInt(prompt("Enter a first number"));
+    var n2 = parseInt(prompt("Enter a second number"));
+    var n3 = parseInt(prompt("Enter a third number"));
+
+    function maxNumber(n1, n2, n3) {
+        if (n1 > n2 && n1 > n3) {
+            return n1 + " first is a greater number!";
+        } else if (n2 > n3 && n2 > n1) {
+            return n2 + " second is a greater number!";
+        } else if (n3 > n1 && n3 > n2) {
+            return n3 + " third is a greater number!";
+        } else {
+            return "there is no greater number! two or more numbers are same";
+        }
+    }
+
+    document.write(maxNumber(n1, n2, n3)); 
+</script>

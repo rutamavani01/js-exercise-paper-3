@@ -1,0 +1,28 @@
+<!-- array ascending  order sort using for loop.
+let arr = [10,2,5,18,8];
+below output
+ans = [2,5,8,10,18] -->
+
+<script type="text/javascript">
+    let arr = [10, 2, 5, 18, 8];
+
+    //    let ans = arr.sort(function (a,b){
+    //     return a - b;
+    //    })
+    //     document.write(ans);
+
+
+    document.write(`<h1>Before sorting: ${arr}</h1>`);
+
+    for (i = 0; i < arr.length; i++) {
+        for (j = 0; j < arr.length; j++) {
+            if (arr[i] < arr[j]) {
+                let c = arr[i];
+                arr[i] = arr[j];
+                arr[j] = c;
+            }
+        }
+    }
+    document.write(`<h1>After sorting: ${arr}</h1>`);
+
+</script>
